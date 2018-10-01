@@ -31,11 +31,11 @@ dependencies:
 - jedi
 - jinja2
 - jsonschema
-- jupyter
-- jupyter_client
-- jupyter_console
-- jupyter_core
-- conda-forge::jupyter_contrib_nbextensions  
+#- jupyter
+#- jupyter_client
+#- jupyter_console
+#- jupyter_core
+#- conda-forge::jupyter_contrib_nbextensions  
 - libiconv
 - libpng
 - libsodium
@@ -44,7 +44,6 @@ dependencies:
 - matplotlib
 - mistune
 - mkl
-- nbconvert
 - nbformat
 - notebook
 - numpy
@@ -64,7 +63,7 @@ dependencies:
 - pygments
 - pyparsing
 - pyqt
-- python>=3.6.0
+- python=3.6.*
 - python-dateutil
 - pytz
 - pyzmq
@@ -78,6 +77,7 @@ dependencies:
 - six
 - sqlite
 - statsmodels
+- testfixtures
 - testpath
 - tk
 - tornado<5
@@ -92,11 +92,12 @@ dependencies:
 - bcolz
 - prompt_toolkit
 - pytest
+- cython
 - pip:
   - torchvision>=0.1.9
   - opencv-python
   - isoweek
-  - pandas_summary
+  - pandas_summary==0.0.5
   - torchtext
   - graphviz
   - sklearn_pandas
@@ -104,3 +105,5 @@ dependencies:
   - plotnine
   - kaggle-cli
   - ipywidgets
+  - nbconvert
+  - PyHamcrest
